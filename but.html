@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Buttons</title>
+    <h1>4 Buttons</h1>  
+</head>
+<body>    
+    <div class="button-container">
+    <button id="redBtn" class="color-btn" style="background-color: red;"onclick="changeBackground('red','redBtn')">Red Button</button>
+    <button id="blueBtn" class="color-btn" style="background-color: blue;"onclick="changeBackground('blue','blueBtn')">Blue Button</button>
+    <button id="greenBtn" class="color-btn" style="background-color: green;"onclick="changeBackground('Green','greenBtn')">Green Button</button>
+    <button id="resetBtn" class="reset-btn" style="background-color: white;"onclick=default1()>Reset</button>
+</div>
+<script>
+function changeBackground(color,btnid) {
+    document.body.style.backgroundColor = color;
+    document.getElementById(btnid).style.backgroundColor=color;
+}
+function default1(){
+    document.getElementById("redBtn").style.backgroundColor='white';
+    document.getElementById("blueBtn").style.backgroundColor='white';
+    document.getElementById("greenBtn").style.backgroundColor='white';
+    document.body.style.backgroundColor = 'white';
+}
+</script>
+</body>
+</html>
